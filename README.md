@@ -42,12 +42,12 @@ https://github.com/Hakky54/mutual-tls
 
 Create a keystore for the server,with a public and private key:
 ```bash
-keytool -genkeypair -keyalg RSA -keysize 2048 -alias serverCert -dname "CN=AXA,OU=AXA_ES,O=ArchExec,C=ES" -validity 3650 -keystore serverIdentity.jks -storepass secret -keypass secret -deststoretype pkcs12
+keytool -genkeypair -keyalg RSA -keysize 2048 -alias serverCert -dname "CN=ServerCN,OU=Server,O=Dpto,C=ES" -validity 3650 -keystore serverIdentity.jks -storepass secret -keypass secret -deststoretype pkcs12
 ```
 
 Client certificate:
 ```bash
-keytool -genkeypair -keyalg RSA -keysize 2048 -alias clientCert -dname "CN=Sngular,OU=Sngular_ES,O=RCB,C=ES" -validity 3650 -keystore clientIdentity.jks -storepass secret -keypass secret -deststoretype pkcs12
+keytool -genkeypair -keyalg RSA -keysize 2048 -alias clientCert -dname "CN=ClientCN,OU=Client,O=RCB,C=ES" -validity 3650 -keystore clientIdentity.jks -storepass secret -keypass secret -deststoretype pkcs12
 ```
 
 

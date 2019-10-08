@@ -1,0 +1,20 @@
+.gradle/
+.gradletasknamecache
+build/
+out/
+api-sources/
+generated/
+.swagger-codegen/
+pom.xml
+**/target/**
+
+# IDE
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+bin/
+
+# Kaleidoscope
+*.orig

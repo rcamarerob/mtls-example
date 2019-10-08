@@ -1,0 +1,14 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:serverIdentity.jks
+    key-password: secret
+    key-store-password: secret
+    trust-store: classpath:serverTruststore.jks
+    trust-store-password: secret
+    client-auth: need
+
+logging:
+  level:
+    root: DEBUG

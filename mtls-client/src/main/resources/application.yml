@@ -1,0 +1,15 @@
+client:
+  ssl:
+    enabled: true
+    key-store: classpath:clientIdentity.jks
+    key-password: secret
+    key-store-password: secret
+    trust-store: classpath:clientTrustStore.jks
+    trust-store-password: secret
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: DEBUG
